@@ -25,3 +25,4 @@ RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension \
  && jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 COPY jupyter_notebook_config.py /root/.jupyter/
+COPY signate.json /root/.signate/
