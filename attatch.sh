@@ -1,0 +1,1 @@
+docker exec -it pytorch-lab /bin/bash
