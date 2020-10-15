@@ -16,6 +16,10 @@ RUN conda config --add channels pytorch \
     sympy \
  && conda clean --all -f -y
 
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+RUN rm -rf requirements.txt
+
 # Install jupyter extensions
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension \
  && jupyter labextension install @jupyter-widgets/jupyterlab-manager
