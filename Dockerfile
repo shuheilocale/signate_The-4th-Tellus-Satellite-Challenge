@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:latest
+FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 # Install required libraries
 RUN conda config --add channels pytorch \
